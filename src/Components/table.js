@@ -124,24 +124,22 @@ function MyTable() {
             <Grid container spacing={2}>
               <Grid padding={2} item xs={10} sm={5} md={4}>
                 <Table>
-                  <TableHead>
+                  <TableBody>
                     <TableRow>
-                      <TableCell>Label</TableCell>
+                      <TableCell variant="head">Label</TableCell>
                       <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableHead>
-                  <TableHead>
+
                     <TableRow>
-                      <TableCell>Label</TableCell>
+                      <TableCell variant="head">Label</TableCell>
                       <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableHead>
-                  <TableHead>
+
                     <TableRow>
-                      <TableCell>Label</TableCell>
+                      <TableCell variant="head">Label</TableCell>
                       <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableHead>
+                  </TableBody>
                 </Table>
               </Grid>
 
@@ -149,25 +147,22 @@ function MyTable() {
 
               <Grid item xs={10} sm={5} md={4}>
                 <Table>
-                  <TableHead>
+                  <TableBody>
                     <TableRow>
-                      <TableCell>Label</TableCell>
+                      <TableCell variant="head">Label</TableCell>
                       <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableHead>
-                  <TableHead>
-                    <TableRow>
-                      <TableCell>Label</TableCell>
-                      <TableCell align="right">Value</TableCell>
-                    </TableRow>
-                  </TableHead>
 
-                  <TableHead>
                     <TableRow>
-                      <TableCell>Label</TableCell>
+                      <TableCell variant="head">Label</TableCell>
                       <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableHead>
+
+                    <TableRow>
+                      <TableCell variant="head">Label</TableCell>
+                      <TableCell align="right">Value</TableCell>
+                    </TableRow>
+                  </TableBody>
                 </Table>
               </Grid>
             </Grid>
