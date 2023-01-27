@@ -2,6 +2,7 @@ import {
   createTheme,
   Divider,
   Grid,
+  Hidden,
   Stack,
   Tab,
   Table,
@@ -127,7 +128,7 @@ function MyTable() {
 
             <Grid container spacing={2}>
               <Grid
-                padding={{ xs: 2, sm: 1, md: 0 }}
+                padding={{ xs: 2, sm: 1, md: 2 }}
                 item
                 xs={10}
                 sm={5}
@@ -159,14 +160,16 @@ function MyTable() {
                 </Table>
               </Grid>
 
-              <Divider orientation="vertical" flexItem />
+              <Hidden smDown>
+                <Divider orientation="vertical" flexItem />
+              </Hidden>
 
               <Grid
                 item
                 xs={10}
                 sm={5}
                 md={4}
-                padding={{ xs: 2, sm: 1, md: 0 }}
+                padding={{ xs: 2, sm: 1, md: 2 }}
               >
                 <Table>
                   <TableBody>
