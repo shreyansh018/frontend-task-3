@@ -11,7 +11,6 @@ import {
   ThemeProvider,
   Typography,
 } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 
 const theme = createTheme({
   palette: {
@@ -26,15 +25,15 @@ const theme = createTheme({
   },
 });
 
-const useStyles = makeStyles({
+const theme2 = createTheme({
   typography: {
-    color: "#bdbdbd",
+    allVariants: {
+      color: "#bdbdbd",
+    },
   },
 });
 
 function App() {
-  const classes = useStyles();
-
   return (
     <Stack>
       <ThemeProvider theme={theme}>
@@ -75,174 +74,170 @@ function App() {
         </Stack>
       </ThemeProvider>
 
-      <Stack>
-        {/*1st table */}
+      <ThemeProvider theme={theme2}>
+        <Stack>
+          {/*1st table */}
 
-        <Stack
-          paddingLeft={{ xs: 2, sm: 3, md: 5 }}
-          paddingTop={5}
-          paddingBottom={5}
-        >
-          <Typography className={classes.typography} variant="h5">
-            TABLE/SMALL
-          </Typography>
+          <Stack
+            paddingLeft={{ xs: 2, sm: 3, md: 5 }}
+            paddingTop={5}
+            paddingBottom={5}
+          >
+            <Typography variant="h5">TABLE/SMALL</Typography>
 
-          <Grid container>
-            <Grid item xs={4}>
-              <Table padding="normal">
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Label</TableCell>
-                    <TableCell align="right">Value</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Label</TableCell>
-                    <TableCell align="right">Value</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Label</TableCell>
-                    <TableCell align="right">Value</TableCell>
-                  </TableRow>
-                </TableHead>
-              </Table>
+            <Grid container>
+              <Grid item xs={4}>
+                <Table padding="normal">
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableCell align="right">Value</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableCell align="right">Value</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableCell align="right">Value</TableCell>
+                    </TableRow>
+                  </TableHead>
+                </Table>
+              </Grid>
             </Grid>
-          </Grid>
+          </Stack>
+
+          {/*1st table end */}
+
+          {/*2nd table */}
+
+          <Stack
+            paddingLeft={{ xs: 2, sm: 3, md: 5 }}
+            paddingTop={5}
+            paddingBottom={5}
+          >
+            <Typography variant="h5">TABLE/2 COLUMNS</Typography>
+
+            <Grid container spacing={2}>
+              <Grid padding={2} item xs={0} sm={4} md={4}>
+                <Table>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableCell align="right">Value</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableCell align="right">Value</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableCell align="right">Value</TableCell>
+                    </TableRow>
+                  </TableHead>
+                </Table>
+              </Grid>
+
+              <Divider orientation="vertical" flexItem />
+
+              <Grid item xs={0} sm={4} md={4}>
+                <Table>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableCell align="right">Value</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableCell align="right">Value</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableCell align="right">Value</TableCell>
+                    </TableRow>
+                  </TableHead>
+                </Table>
+              </Grid>
+            </Grid>
+          </Stack>
+
+          {/*2nd table end */}
+
+          {/*3rd table */}
+          <Stack
+            paddingLeft={{ xs: 2, sm: 3, md: 5 }}
+            paddingTop={5}
+            paddingBottom={5}
+          >
+            <Typography variant="h5">TABLE/BIG</Typography>
+            <Grid container>
+              <Grid item xs={8}>
+                <Table>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell variant="head">Header</TableCell>
+                      <TableCell>Header</TableCell>
+                      <TableCell>Header</TableCell>
+                      <TableCell>Header</TableCell>
+                      <TableCell>Header</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                    </TableRow>
+                  </TableBody>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                    </TableRow>
+                  </TableBody>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                    </TableRow>
+                  </TableBody>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                      <TableCell>Value</TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </Grid>
+            </Grid>
+          </Stack>
+
+          {/*3rd table end */}
         </Stack>
-
-        {/*1st table end */}
-
-        {/*2nd table */}
-
-        <Stack
-          paddingLeft={{ xs: 2, sm: 3, md: 5 }}
-          paddingTop={5}
-          paddingBottom={5}
-        >
-          <Typography className={classes.typography} variant="h5">
-            TABLE/2 COLUMNS
-          </Typography>
-
-          <Grid container spacing={2}>
-            <Grid padding={2} item xs={0} sm={4} md={4}>
-              <Table>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Label</TableCell>
-                    <TableCell align="right">Value</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Label</TableCell>
-                    <TableCell align="right">Value</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Label</TableCell>
-                    <TableCell align="right">Value</TableCell>
-                  </TableRow>
-                </TableHead>
-              </Table>
-            </Grid>
-
-            <Divider orientation="vertical" flexItem />
-
-            <Grid item xs={0} sm={4} md={4}>
-              <Table>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Label</TableCell>
-                    <TableCell align="right">Value</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Label</TableCell>
-                    <TableCell align="right">Value</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Label</TableCell>
-                    <TableCell align="right">Value</TableCell>
-                  </TableRow>
-                </TableHead>
-              </Table>
-            </Grid>
-          </Grid>
-        </Stack>
-
-        {/*2nd table end */}
-
-        {/*3rd table */}
-        <Stack
-          paddingLeft={{ xs: 2, sm: 3, md: 5 }}
-          paddingTop={5}
-          paddingBottom={5}
-        >
-          <Typography className={classes.typography} variant="h5">
-            TABLE/BIG
-          </Typography>
-          <Grid container>
-            <Grid item xs={8}>
-              <Table>
-                <TableHead>
-                  <TableRow>
-                    <TableCell variant="head">Header</TableCell>
-                    <TableCell>Header</TableCell>
-                    <TableCell>Header</TableCell>
-                    <TableCell>Header</TableCell>
-                    <TableCell>Header</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  <TableRow>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                  </TableRow>
-                </TableBody>
-                <TableBody>
-                  <TableRow>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                  </TableRow>
-                </TableBody>
-                <TableBody>
-                  <TableRow>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                  </TableRow>
-                </TableBody>
-                <TableBody>
-                  <TableRow>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                    <TableCell>Value</TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
-            </Grid>
-          </Grid>
-        </Stack>
-
-        {/*3rd table end */}
-      </Stack>
+      </ThemeProvider>
     </Stack>
   );
 }
