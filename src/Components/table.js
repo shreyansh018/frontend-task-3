@@ -120,7 +120,13 @@ function MyTable() {
             <Typography variant="h5">TABLE/2 COLUMNS</Typography>
 
             <Grid container spacing={2}>
-              <Grid padding={2} item xs={10} sm={5} md={4}>
+              <Grid
+                padding={{ xs: 2, sm: 1, md: 0 }}
+                item
+                xs={10}
+                sm={5}
+                md={4}
+              >
                 <Table>
                   <TableBody>
                     <TableRow>
