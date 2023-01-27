@@ -4,7 +4,6 @@ import {
   Grid,
   Hidden,
   Stack,
-  Tab,
   Table,
   TableBody,
   TableCell,
