@@ -94,16 +94,12 @@ function MyTable() {
                       <TableCell variant="head">Label</TableCell>
                       <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableBody>
 
-                  <TableBody>
                     <TableRow>
                       <TableCell variant="head">Label</TableCell>
                       <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableBody>
 
-                  <TableBody>
                     <TableRow>
                       <TableCell variant="head">Label</TableCell>
                       <TableCell align="right">Value</TableCell>
