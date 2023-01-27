@@ -129,8 +129,8 @@ function MyTable() {
 
             <Grid container spacing={2}>
               <Grid
-                paddingLeft={{ xs: 2, sm: 1, md: 2 }}
-                paddingRight={{ xs: 2, sm: 1, md: 2 }}
+                paddingLeft={{ xs: 0, sm: 1, md: 2 }}
+                paddingRight={{ xs: 0, sm: 1, md: 2 }}
                 item
                 xs={10}
                 sm={5}
@@ -171,8 +171,8 @@ function MyTable() {
                 xs={10}
                 sm={5}
                 md={4}
-                paddingLeft={{ xs: 2, sm: 1, md: 2 }}
-                paddingRight={{ xs: 2, sm: 1, md: 2 }}
+                paddingLeft={{ xs: 0, sm: 1, md: 2 }}
+                paddingRight={{ xs: 0, sm: 1, md: 2 }}
               >
                 <Table>
                   <TableBody>
