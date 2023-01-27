@@ -187,7 +187,7 @@ function MyTable() {
                 <Table>
                   <TableHead>
                     <TableRow>
-                      <TableCell variant="head">Header</TableCell>
+                      <TableCell>Header</TableCell>
                       <TableCell>Header</TableCell>
                       <TableCell>Header</TableCell>
                       <TableCell>Header</TableCell>
