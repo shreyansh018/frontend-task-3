@@ -143,7 +143,13 @@ function MyTable() {
 
               <Divider orientation="vertical" flexItem />
 
-              <Grid item xs={10} sm={5} md={4}>
+              <Grid
+                item
+                xs={10}
+                sm={5}
+                md={4}
+                padding={{ xs: 2, sm: 1, md: 0 }}
+              >
                 <Table>
                   <TableBody>
                     <TableRow>
