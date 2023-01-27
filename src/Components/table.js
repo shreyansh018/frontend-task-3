@@ -91,38 +91,24 @@ function MyTable() {
                 <Table padding="normal">
                   <TableBody>
                     <TableRow>
-                      <TableCell variant="header">Header</TableCell>
-                      <TableCell align="right">Normal Value</TableCell>
-                    </TableRow>
-                    <TableRow>
                       <TableCell variant="head">Label</TableCell>
-                      <TableCell align="right">Normal Value</TableCell>
+                      <TableCell align="right">Value</TableCell>
                     </TableRow>
                   </TableBody>
-                  <TableHead>
+
+                  <TableBody>
                     <TableRow>
-                      <TableCell>Label</TableCell>
+                      <TableCell variant="head">Label</TableCell>
                       <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableHead>
-                  <TableHead>
+                  </TableBody>
+
+                  <TableBody>
                     <TableRow>
-                      <TableCell>Label</TableCell>
+                      <TableCell variant="head">Label</TableCell>
                       <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableHead>
-                  <TableHead>
-                    <TableRow>
-                      <TableCell>Label</TableCell>
-                      <TableCell align="right">Value</TableCell>
-                    </TableRow>
-                  </TableHead>
-                  <TableHead>
-                    <TableRow>
-                      <TableCell>Label</TableCell>
-                      <TableCell align="right">Value</TableCell>
-                    </TableRow>
-                  </TableHead>
+                  </TableBody>
                 </Table>
               </Grid>
             </Grid>
