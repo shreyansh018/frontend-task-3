@@ -88,6 +88,14 @@ function MyTable() {
             <Grid container>
               <Grid item xs={10} sm={6} md={4}>
                 <Table padding="normal">
+                  <TableBody>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableHead>
+                        <TableCell align="right">Value</TableCell>
+                      </TableHead>
+                    </TableRow>
+                  </TableBody>
                   <TableHead>
                     <TableRow>
                       <TableCell>Label</TableCell>
@@ -162,14 +170,13 @@ function MyTable() {
                       <TableCell align="right">Value</TableCell>
                     </TableRow>
                   </TableHead>
-                  <TableBody>
+
+                  <TableHead>
                     <TableRow>
                       <TableCell>Label</TableCell>
-                      <TableHead>
-                        <TableCell align="right">Value</TableCell>
-                      </TableHead>
+                      <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableBody>
+                  </TableHead>
                 </Table>
               </Grid>
             </Grid>
