@@ -80,7 +80,7 @@ function MyTable() {
           {/*1st table */}
 
           <Stack
-            paddingLeft={{ xs: 2, sm: 3, md: 5 }}
+            paddingLeft={{ xs: 2, sm: 3, md: 4 }}
             paddingTop={5}
             paddingBottom={5}
           >
@@ -121,7 +121,7 @@ function MyTable() {
           {/*2nd table */}
 
           <Stack
-            paddingLeft={{ xs: 2, sm: 3, md: 5 }}
+            paddingLeft={{ xs: 2, sm: 3, md: 4 }}
             paddingTop={5}
             paddingBottom={5}
           >
@@ -206,7 +206,7 @@ function MyTable() {
 
           {/*3rd table */}
           <Stack
-            paddingLeft={{ xs: 2, sm: 3, md: 5 }}
+            paddingLeft={{ xs: 2, sm: 3, md: 4 }}
             paddingTop={5}
             paddingBottom={5}
           >
