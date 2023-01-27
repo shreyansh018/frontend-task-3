@@ -86,7 +86,7 @@ function MyTable() {
             <Typography variant="h5">TABLE/SMALL</Typography>
 
             <Grid container>
-              <Grid item xs={10} sm={6} md={4}>
+              <Grid item xs={12} sm={8} md={7}>
                 <Table padding="normal">
                   <TableBody>
                     <TableRow>
@@ -96,24 +96,30 @@ function MyTable() {
                       </TableHead>
                     </TableRow>
                   </TableBody>
-                  <TableHead>
+                  <TableBody>
                     <TableRow>
                       <TableCell>Label</TableCell>
-                      <TableCell align="right">Value</TableCell>
+                      <TableHead>
+                        <TableCell align="right">Value</TableCell>
+                      </TableHead>
                     </TableRow>
-                  </TableHead>
-                  <TableHead>
+                  </TableBody>
+                  <TableBody>
                     <TableRow>
                       <TableCell>Label</TableCell>
-                      <TableCell align="right">Value</TableCell>
+                      <TableHead>
+                        <TableCell align="right">Value</TableCell>
+                      </TableHead>
                     </TableRow>
-                  </TableHead>
-                  <TableHead>
+                  </TableBody>
+                  <TableBody>
                     <TableRow>
                       <TableCell>Label</TableCell>
-                      <TableCell align="right">Value</TableCell>
+                      <TableHead>
+                        <TableCell align="right">Value</TableCell>
+                      </TableHead>
                     </TableRow>
-                  </TableHead>
+                  </TableBody>
                 </Table>
               </Grid>
             </Grid>
