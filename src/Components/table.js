@@ -162,12 +162,14 @@ function MyTable() {
                       <TableCell align="right">Value</TableCell>
                     </TableRow>
                   </TableHead>
-                  <TableHead>
+                  <TableBody>
                     <TableRow>
                       <TableCell>Label</TableCell>
-                      <TableCell align="right">Value</TableCell>
+                      <TableHead>
+                        <TableCell align="right">Value</TableCell>
+                      </TableHead>
                     </TableRow>
-                  </TableHead>
+                  </TableBody>
                 </Table>
               </Grid>
             </Grid>
