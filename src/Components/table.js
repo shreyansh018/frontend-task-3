@@ -91,11 +91,15 @@ function MyTable() {
                 <Table padding="normal">
                   <TableBody>
                     <TableRow>
-                      <TableCell component="th">Header</TableCell>
+                      <TableCell variant="header" component="th">
+                        Header
+                      </TableCell>
                       <TableCell align="right">Normal Value</TableCell>
                     </TableRow>
                     <TableRow>
-                      <TableCell component="th">Header</TableCell>
+                      <TableCell variant="head" component="th">
+                        Header
+                      </TableCell>
                       <TableCell align="right">Normal Value</TableCell>
                     </TableRow>
                   </TableBody>
