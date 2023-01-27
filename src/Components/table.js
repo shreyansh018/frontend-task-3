@@ -90,18 +90,24 @@ function MyTable() {
               <Table>
                 <TableBody>
                   <TableRow>
-                    <TableCell variant="head">Label</TableCell>
-                    <TableCell align="right">Value</TableCell>
+                    <TableCell>Label</TableCell>
+                    <TableCell variant="head" align="right">
+                      Value
+                    </TableCell>
                   </TableRow>
 
                   <TableRow>
-                    <TableCell variant="head">Label</TableCell>
-                    <TableCell align="right">Value</TableCell>
+                    <TableCell>Label</TableCell>
+                    <TableCell variant="head" align="right">
+                      Value
+                    </TableCell>
                   </TableRow>
 
                   <TableRow>
-                    <TableCell variant="head">Label</TableCell>
-                    <TableCell align="right">Value</TableCell>
+                    <TableCell>Label</TableCell>
+                    <TableCell variant="head" align="right">
+                      Value
+                    </TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
