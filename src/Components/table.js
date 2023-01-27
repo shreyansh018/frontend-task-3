@@ -86,31 +86,33 @@ function MyTable() {
           >
             <Typography variant="h5">TABLE/SMALL</Typography>
 
-            <Grid container xs={10} sm={6} md={4}>
-              <Table>
-                <TableBody>
-                  <TableRow>
-                    <TableCell>Label</TableCell>
-                    <TableCell variant="head" align="right">
-                      Value
-                    </TableCell>
-                  </TableRow>
+            <Grid container>
+              <Grid item xs={10} sm={6} md={4}>
+                <Table>
+                  <TableBody>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableCell variant="head" align="right">
+                        Value
+                      </TableCell>
+                    </TableRow>
 
-                  <TableRow>
-                    <TableCell>Label</TableCell>
-                    <TableCell variant="head" align="right">
-                      Value
-                    </TableCell>
-                  </TableRow>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableCell variant="head" align="right">
+                        Value
+                      </TableCell>
+                    </TableRow>
 
-                  <TableRow>
-                    <TableCell>Label</TableCell>
-                    <TableCell variant="head" align="right">
-                      Value
-                    </TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
+                    <TableRow>
+                      <TableCell>Label</TableCell>
+                      <TableCell variant="head" align="right">
+                        Value
+                      </TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+              </Grid>
             </Grid>
           </Stack>
 
@@ -127,7 +129,8 @@ function MyTable() {
 
             <Grid container spacing={2}>
               <Grid
-                padding={{ xs: 2, sm: 1, md: 2 }}
+                paddingLeft={{ xs: 2, sm: 1, md: 2 }}
+                paddingRight={{ xs: 2, sm: 1, md: 2 }}
                 item
                 xs={10}
                 sm={5}
@@ -168,7 +171,8 @@ function MyTable() {
                 xs={10}
                 sm={5}
                 md={4}
-                padding={{ xs: 2, sm: 1, md: 2 }}
+                paddingLeft={{ xs: 2, sm: 1, md: 2 }}
+                paddingRight={{ xs: 2, sm: 1, md: 2 }}
               >
                 <Table>
                   <TableBody>
