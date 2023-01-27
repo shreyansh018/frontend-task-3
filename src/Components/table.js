@@ -86,27 +86,25 @@ function MyTable() {
           >
             <Typography variant="h5">TABLE/SMALL</Typography>
 
-            <Grid container>
-              <Grid item xs={10} sm={6} md={4}>
-                <Table padding="normal">
-                  <TableBody>
-                    <TableRow>
-                      <TableCell variant="head">Label</TableCell>
-                      <TableCell align="right">Value</TableCell>
-                    </TableRow>
+            <Grid container xs={10} sm={6} md={4}>
+              <Table>
+                <TableBody>
+                  <TableRow>
+                    <TableCell variant="head">Label</TableCell>
+                    <TableCell align="right">Value</TableCell>
+                  </TableRow>
 
-                    <TableRow>
-                      <TableCell variant="head">Label</TableCell>
-                      <TableCell align="right">Value</TableCell>
-                    </TableRow>
+                  <TableRow>
+                    <TableCell variant="head">Label</TableCell>
+                    <TableCell align="right">Value</TableCell>
+                  </TableRow>
 
-                    <TableRow>
-                      <TableCell variant="head">Label</TableCell>
-                      <TableCell align="right">Value</TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-              </Grid>
+                  <TableRow>
+                    <TableCell variant="head">Label</TableCell>
+                    <TableCell align="right">Value</TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
             </Grid>
           </Stack>
 
