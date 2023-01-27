@@ -3,6 +3,7 @@ import {
   Divider,
   Grid,
   Stack,
+  Tab,
   Table,
   TableBody,
   TableCell,
@@ -88,6 +89,16 @@ function MyTable() {
             <Grid container>
               <Grid item xs={10} sm={6} md={4}>
                 <Table padding="normal">
+                  <TableBody>
+                    <TableRow>
+                      <TableCell component="th">Header</TableCell>
+                      <TableCell align="right">Normal Value</TableCell>
+                    </TableRow>
+                    <TableRow>
+                      <TableCell component="th">Header</TableCell>
+                      <TableCell align="right">Normal Value</TableCell>
+                    </TableRow>
+                  </TableBody>
                   <TableHead>
                     <TableRow>
                       <TableCell>Label</TableCell>
