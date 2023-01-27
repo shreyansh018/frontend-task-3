@@ -86,40 +86,32 @@ function MyTable() {
             <Typography variant="h5">TABLE/SMALL</Typography>
 
             <Grid container>
-              <Grid item xs={12} sm={8} md={7}>
+              <Grid item xs={10} sm={6} md={4}>
                 <Table padding="normal">
-                  <TableBody>
+                  <TableHead>
                     <TableRow>
                       <TableCell>Label</TableCell>
-                      <TableHead>
-                        <TableCell align="right">Value</TableCell>
-                      </TableHead>
+                      <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableBody>
-                  <TableBody>
+                  </TableHead>
+                  <TableHead>
                     <TableRow>
                       <TableCell>Label</TableCell>
-                      <TableHead>
-                        <TableCell align="right">Value</TableCell>
-                      </TableHead>
+                      <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableBody>
-                  <TableBody>
+                  </TableHead>
+                  <TableHead>
                     <TableRow>
                       <TableCell>Label</TableCell>
-                      <TableHead>
-                        <TableCell align="right">Value</TableCell>
-                      </TableHead>
+                      <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableBody>
-                  <TableBody>
+                  </TableHead>
+                  <TableHead>
                     <TableRow>
                       <TableCell>Label</TableCell>
-                      <TableHead>
-                        <TableCell align="right">Value</TableCell>
-                      </TableHead>
+                      <TableCell align="right">Value</TableCell>
                     </TableRow>
-                  </TableBody>
+                  </TableHead>
                 </Table>
               </Grid>
             </Grid>
